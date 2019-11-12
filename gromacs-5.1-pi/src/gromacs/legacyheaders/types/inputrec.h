@@ -298,6 +298,7 @@ typedef struct {
     int      n_tf_grps;
     int     *group_explicit;
     int      n_energy_grps;
+    gmx_bool PI_ExclUserGrp; /* if this is set, all interactions between different user2-grps will be exluded*/
 } t_adress;
 
 typedef struct {
