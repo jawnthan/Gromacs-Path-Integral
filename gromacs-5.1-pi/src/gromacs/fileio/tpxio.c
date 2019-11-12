@@ -1499,6 +1499,9 @@ static void do_inputrec(t_fileio *fio, t_inputrec *ir, gmx_bool bRead,
     gmx_fio_do_real(fio, ir->userreal2);
     gmx_fio_do_real(fio, ir->userreal3);
     gmx_fio_do_real(fio, ir->userreal4);
+    gmx_fio_do_int(fio, ir->n_pi_grps);
+    gmx_fio_do_real(fio,ir->scale_coulomb);
+    gmx_fio_do_int(fio,ir->do_nm);
 
     /* AdResS stuff */
     if (file_version >= 77)
