@@ -2281,11 +2281,14 @@ void get_ir(const char *mdparin, const char *mdparout,
     /* AdResS defined thingies */
     CCTYPE ("AdResS parameters");
     EETYPE("adress",       ir->bAdress, yesno_names);
-    if (ir->bAdress)
-    {
+    RTYPE("adress_scale_coulomb",      ir->scale_coulomb, 1);
+    EETYPE("adress_do_nm",             ir->do_nm, yesno_names);
+    printf("how r u %s \n", ir->bAdress?"true":"false");
+ //   if (ir->bAdress)
+ //   {
         snew(ir->adress, 1);
         read_adressparams(&ninp, &inp, ir->adress, wi);
-    }
+ //   }
 
     /* User defined thingies */
     CCTYPE ("User defined thingies");
