@@ -1,0 +1,20 @@
+TestUtilsUnitTests 1 0.190013
+MdlibUnitTest 1 0.029953
+CommandLineUnitTests 1 0.128894
+FFTUnitTests 1 0.085166
+MathUnitTests 1 0.0175891
+RandomUnitTests 1 0.0210731
+OnlineHelpUnitTests 1 0.0513051
+OptionsUnitTests 1 0.027061
+UtilityUnitTests 1 0.0480149
+FileIOTests 1 0.020632
+SimdUnitTests 1 0.0606201
+LegacyToolsTests 1 0.10284
+GmxPreprocessTests 1 0.154468
+CorrelationsTest 1 0.209058
+AnalysisDataUnitTests 1 0.0807869
+SelectionUnitTests 1 0.251117
+TrajectoryAnalysisUnitTests 1 0.421946
+MdrunTests 1 2.05646
+MdrunMpiTests 1 0.138597
+---

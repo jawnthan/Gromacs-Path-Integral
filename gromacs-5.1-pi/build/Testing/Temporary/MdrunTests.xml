@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="18" failures="0" disabled="0" errors="0" timestamp="2019-10-09T15:17:15" time="1.974" name="AllTests">
+  <testsuite name="GromppTest" tests="1" failures="0" disabled="0" errors="0" time="0.029">
+    <testcase name="EmptyMdpFileWorks" status="run" time="0.029" classname="GromppTest" />
+  </testsuite>
+  <testsuite name="CompelTest" tests="1" failures="0" disabled="0" errors="0" time="0.48">
+    <testcase name="SwapCanRun" status="run" time="0.48" classname="CompelTest" />
+  </testsuite>
+  <testsuite name="ImdTest" tests="1" failures="0" disabled="0" errors="0" time="0.132">
+    <testcase name="ImdCanRun" status="run" time="0.132" classname="ImdTest" />
+  </testsuite>
+  <testsuite name="NoFatalErrorFrom/MdrunRerun" tests="6" failures="0" disabled="0" errors="0" time="0.707">
+    <testcase name="WithDifferentInputFormats/0" value_param="&quot;../../../gromacs/gmxana/legacytests/spc2-traj.trr&quot;" status="run" time="0.1" classname="NoFatalErrorFrom/MdrunRerun" />
+    <testcase name="WithDifferentInputFormats/1" value_param="&quot;../../../gromacs/gmxana/legacytests/spc2-traj.tng&quot;" status="run" time="0.132" classname="NoFatalErrorFrom/MdrunRerun" />
+    <testcase name="WithDifferentInputFormats/2" value_param="&quot;../../../gromacs/gmxana/legacytests/spc2-traj.xtc&quot;" status="run" time="0.099" classname="NoFatalErrorFrom/MdrunRerun" />
+    <testcase name="WithDifferentInputFormats/3" value_param="&quot;../../../gromacs/gmxana/legacytests/spc2-traj.gro&quot;" status="run" time="0.131" classname="NoFatalErrorFrom/MdrunRerun" />
+    <testcase name="WithDifferentInputFormats/4" value_param="&quot;../../../gromacs/gmxana/legacytests/spc2-traj.pdb&quot;" status="run" time="0.095" classname="NoFatalErrorFrom/MdrunRerun" />
+    <testcase name="WithDifferentInputFormats/5" value_param="&quot;../../../gromacs/gmxana/legacytests/spc2-traj.g96&quot;" status="run" time="0.149" classname="NoFatalErrorFrom/MdrunRerun" />
+  </testsuite>
+  <testsuite name="CanWrite/Trajectories" tests="3" failures="0" disabled="0" errors="0" time="0.141">
+    <testcase name="ThatDifferInNstxout/0" value_param="&quot;1&quot;" status="run" time="0.054" classname="CanWrite/Trajectories" />
+    <testcase name="ThatDifferInNstxout/1" value_param="&quot;2&quot;" status="run" time="0.046" classname="CanWrite/Trajectories" />
+    <testcase name="ThatDifferInNstxout/2" value_param="&quot;3&quot;" status="run" time="0.041" classname="CanWrite/Trajectories" />
+  </testsuite>
+  <testsuite name="CanWrite/NptTrajectories" tests="3" failures="0" disabled="0" errors="0" time="0.143">
+    <testcase name="WithDifferentPcoupl/0" value_param="&quot;no&quot;" status="run" time="0.037" classname="CanWrite/NptTrajectories" />
+    <testcase name="WithDifferentPcoupl/1" value_param="&quot;Berendsen&quot;" status="run" time="0.053" classname="CanWrite/NptTrajectories" />
+    <testcase name="WithDifferentPcoupl/2" value_param="&quot;Parrinello-Rahman&quot;" status="run" time="0.053" classname="CanWrite/NptTrajectories" />
+  </testsuite>
+  <testsuite name="WithDifferentMdpOptions/CompressedXOutputTest" tests="3" failures="0" disabled="0" errors="0" time="0.34">
+    <testcase name="ExitsNormally/0" value_param="&quot;&quot;" status="run" time="0.12" classname="WithDifferentMdpOptions/CompressedXOutputTest" />
+    <testcase name="ExitsNormally/1" value_param="&quot;compressed-x-grps = System\n&quot;" status="run" time="0.113" classname="WithDifferentMdpOptions/CompressedXOutputTest" />
+    <testcase name="ExitsNormally/2" value_param="&quot;compressed-x-grps = SecondWaterMolecule\n&quot;" status="run" time="0.107" classname="WithDifferentMdpOptions/CompressedXOutputTest" />
+  </testsuite>
+</testsuites>

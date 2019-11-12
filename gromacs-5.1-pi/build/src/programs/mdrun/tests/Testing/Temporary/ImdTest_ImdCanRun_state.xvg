@@ -1,0 +1,21 @@
+# This file was created Wed Oct  9 15:17:16 2019
+# Created by:
+#                   :-) GROMACS - mdrun-test, VERSION 5.1 (-:
+# 
+# Executable:   /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/bin/mdrun-test
+# Data prefix:  /home/mi/johnwhittake/software/gromacs-510-fcDelta (source tree)
+# Command line:
+#   mdrun-test --gtest_output=xml:/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/Testing/Temporary/MdrunTests.xml
+# mdrun-test is part of G R O M A C S:
+#
+# God Rules Over Mankind, Animals, Cosmos and Such
+#
+@    title "IMD Pull Forces"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "# of Forces / Atom IDs / Forces (kJ/mol)"
+# Can display and manipulate 3 (of a total of 6) atoms via IMD.
+# column 1    : time (ps)
+# column 2    : total number of atoms feeling an IMD pulling force at that time
+# cols. 3.-6  : global atom number of pulled atom, x-force, y-force, z-force (kJ/mol)
+# then follow : atom-ID, f[x], f[y], f[z] for more atoms in case the force on multiple atoms is changed simultaneously.
+# Note that the force on any atom is always equal to the last value for that atom-ID found in the data.

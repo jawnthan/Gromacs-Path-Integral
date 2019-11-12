@@ -1,0 +1,1676 @@
+The system is: Linux - 4.9.0-11-amd64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /import/GCC/5.2/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/3.7.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /import/GCC/5.2/bin/g++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_40a62/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40a62.dir/build.make CMakeFiles/cmTC_40a62.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_40a62.dir/testCCompiler.c.o
+/import/GCC/5.2/bin/gcc     -o CMakeFiles/cmTC_40a62.dir/testCCompiler.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_40a62
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40a62.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc       CMakeFiles/cmTC_40a62.dir/testCCompiler.c.o  -o cmTC_40a62 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d0ed5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d0ed5.dir/build.make CMakeFiles/cmTC_d0ed5.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o
+/import/GCC/5.2/bin/gcc     -o CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_d0ed5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0ed5.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc      -v CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o  -o cmTC_d0ed5 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/import/GCC/5.2/bin/gcc
+COLLECT_LTO_WRAPPER=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/christian/svn/import/gcc_5_2_0_release/configure --with-pkgversion=gcc-5.2 --prefix=/opt/gcc-5.2
+Thread model: posix
+gcc version 5.2.0 (gcc-5.2) 
+COMPILER_PATH=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../libexec/gcc/
+LIBRARY_PATH=/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../lib/gcc/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d0ed5' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2 -plugin /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so -plugin-opt=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccezv7eQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d0ed5 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0 -L/import/GCC/5.2/bin/../lib/gcc -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../.. CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_d0ed5/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_d0ed5.dir/build.make CMakeFiles/cmTC_d0ed5.dir/build]
+  ignore line: [make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/import/GCC/5.2/bin/gcc     -o CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_d0ed5]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d0ed5.dir/link.txt --verbose=1]
+  ignore line: [/import/GCC/5.2/bin/gcc      -v CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o  -o cmTC_d0ed5 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/import/GCC/5.2/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/christian/svn/import/gcc_5_2_0_release/configure --with-pkgversion=gcc-5.2 --prefix=/opt/gcc-5.2]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.0 (gcc-5.2) ]
+  ignore line: [COMPILER_PATH=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../lib/gcc/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d0ed5' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2 -plugin /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so -plugin-opt=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccezv7eQ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d0ed5 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0 -L/import/GCC/5.2/bin/../lib/gcc -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../.. CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccezv7eQ.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d0ed5] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o] ==> ignore
+    arg [-L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0] ==> dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0]
+    arg [-L/import/GCC/5.2/bin/../lib/gcc] ==> dir [/import/GCC/5.2/bin/../lib/gcc]
+    arg [-L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64] ==> dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..] ==> dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..]
+    arg [CMakeFiles/cmTC_d0ed5.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0] ==> [/import/GCC/5.2/lib/gcc/x86_64-unknown-linux-gnu/5.2.0]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc] ==> [/import/GCC/5.2/lib/gcc]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64] ==> [/import/GCC/5.2/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..] ==> [/import/GCC/5.2/lib]
+  implicit libs: [c]
+  implicit dirs: [/import/GCC/5.2/lib/gcc/x86_64-unknown-linux-gnu/5.2.0;/import/GCC/5.2/lib/gcc;/import/GCC/5.2/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/import/GCC/5.2/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e1dcf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e1dcf.dir/build.make CMakeFiles/cmTC_e1dcf.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1dcf.dir/feature_tests.c.o
+/import/GCC/5.2/bin/gcc    -std=c11 -o CMakeFiles/cmTC_e1dcf.dir/feature_tests.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_e1dcf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1dcf.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc       CMakeFiles/cmTC_e1dcf.dir/feature_tests.c.o  -o cmTC_e1dcf -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:1c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_547d6/fast"
+/usr/bin/make -f CMakeFiles/cmTC_547d6.dir/build.make CMakeFiles/cmTC_547d6.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_547d6.dir/feature_tests.c.o
+/import/GCC/5.2/bin/gcc    -std=c99 -o CMakeFiles/cmTC_547d6.dir/feature_tests.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_547d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_547d6.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc       CMakeFiles/cmTC_547d6.dir/feature_tests.c.o  -o cmTC_547d6 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:1c_variadic_macros
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d632a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d632a.dir/build.make CMakeFiles/cmTC_d632a.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d632a.dir/feature_tests.c.o
+/import/GCC/5.2/bin/gcc    -std=c90 -o CMakeFiles/cmTC_d632a.dir/feature_tests.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_d632a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d632a.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc       CMakeFiles/cmTC_d632a.dir/feature_tests.c.o  -o cmTC_d632a -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:0c_restrict
+    Feature record: C_FEATURE:0c_static_assert
+    Feature record: C_FEATURE:0c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9ccce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9ccce.dir/build.make CMakeFiles/cmTC_9ccce.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9ccce.dir/testCXXCompiler.cxx.o
+/import/GCC/5.2/bin/g++      -o CMakeFiles/cmTC_9ccce.dir/testCXXCompiler.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_9ccce
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ccce.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++        CMakeFiles/cmTC_9ccce.dir/testCXXCompiler.cxx.o  -o cmTC_9ccce -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1749f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1749f.dir/build.make CMakeFiles/cmTC_1749f.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o
+/import/GCC/5.2/bin/g++      -o CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_1749f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1749f.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++       -v CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1749f -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/import/GCC/5.2/bin/g++
+COLLECT_LTO_WRAPPER=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/christian/svn/import/gcc_5_2_0_release/configure --with-pkgversion=gcc-5.2 --prefix=/opt/gcc-5.2
+Thread model: posix
+gcc version 5.2.0 (gcc-5.2) 
+COMPILER_PATH=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../libexec/gcc/
+LIBRARY_PATH=/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../lib/gcc/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1749f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2 -plugin /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so -plugin-opt=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwMSf3D.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1749f /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0 -L/import/GCC/5.2/bin/../lib/gcc -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../.. CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1749f/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1749f.dir/build.make CMakeFiles/cmTC_1749f.dir/build]
+  ignore line: [make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/import/GCC/5.2/bin/g++      -o CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_1749f]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1749f.dir/link.txt --verbose=1]
+  ignore line: [/import/GCC/5.2/bin/g++       -v CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1749f -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/import/GCC/5.2/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/christian/svn/import/gcc_5_2_0_release/configure --with-pkgversion=gcc-5.2 --prefix=/opt/gcc-5.2]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 5.2.0 (gcc-5.2) ]
+  ignore line: [COMPILER_PATH=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/import/GCC/5.2/bin/../lib/gcc/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1749f' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2 -plugin /import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so -plugin-opt=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwMSf3D.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1749f /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0 -L/import/GCC/5.2/bin/../lib/gcc -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../.. CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/import/GCC/5.2/bin/../libexec/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccwMSf3D.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_1749f] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o] ==> ignore
+    arg [-L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0] ==> dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0]
+    arg [-L/import/GCC/5.2/bin/../lib/gcc] ==> dir [/import/GCC/5.2/bin/../lib/gcc]
+    arg [-L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64] ==> dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..] ==> dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..]
+    arg [CMakeFiles/cmTC_1749f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0] ==> [/import/GCC/5.2/lib/gcc/x86_64-unknown-linux-gnu/5.2.0]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc] ==> [/import/GCC/5.2/lib/gcc]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib64] ==> [/import/GCC/5.2/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/import/GCC/5.2/bin/../lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..] ==> [/import/GCC/5.2/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/import/GCC/5.2/lib/gcc/x86_64-unknown-linux-gnu/5.2.0;/import/GCC/5.2/lib/gcc;/import/GCC/5.2/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/import/GCC/5.2/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f02e9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f02e9.dir/build.make CMakeFiles/cmTC_f02e9.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f02e9.dir/feature_tests.cxx.o
+/import/GCC/5.2/bin/g++     -std=c++14 -o CMakeFiles/cmTC_f02e9.dir/feature_tests.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_f02e9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f02e9.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++        CMakeFiles/cmTC_f02e9.dir/feature_tests.cxx.o  -o cmTC_f02e9 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b4a7b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b4a7b.dir/build.make CMakeFiles/cmTC_b4a7b.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b4a7b.dir/feature_tests.cxx.o
+/import/GCC/5.2/bin/g++     -std=c++11 -o CMakeFiles/cmTC_b4a7b.dir/feature_tests.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_b4a7b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4a7b.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++        CMakeFiles/cmTC_b4a7b.dir/feature_tests.cxx.o  -o cmTC_b4a7b -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c03d3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c03d3.dir/build.make CMakeFiles/cmTC_c03d3.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c03d3.dir/feature_tests.cxx.o
+/import/GCC/5.2/bin/g++     -std=c++98 -o CMakeFiles/cmTC_c03d3.dir/feature_tests.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_c03d3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c03d3.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++        CMakeFiles/cmTC_c03d3.dir/feature_tests.cxx.o  -o cmTC_c03d3 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+    Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:0cxx_alias_templates
+    Feature record: CXX_FEATURE:0cxx_alignas
+    Feature record: CXX_FEATURE:0cxx_alignof
+    Feature record: CXX_FEATURE:0cxx_attributes
+    Feature record: CXX_FEATURE:0cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:0cxx_auto_type
+    Feature record: CXX_FEATURE:0cxx_binary_literals
+    Feature record: CXX_FEATURE:0cxx_constexpr
+    Feature record: CXX_FEATURE:0cxx_contextual_conversions
+    Feature record: CXX_FEATURE:0cxx_decltype
+    Feature record: CXX_FEATURE:0cxx_decltype_auto
+    Feature record: CXX_FEATURE:0cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:0cxx_default_function_template_args
+    Feature record: CXX_FEATURE:0cxx_defaulted_functions
+    Feature record: CXX_FEATURE:0cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:0cxx_delegating_constructors
+    Feature record: CXX_FEATURE:0cxx_deleted_functions
+    Feature record: CXX_FEATURE:0cxx_digit_separators
+    Feature record: CXX_FEATURE:0cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:0cxx_explicit_conversions
+    Feature record: CXX_FEATURE:0cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:0cxx_extern_templates
+    Feature record: CXX_FEATURE:0cxx_final
+    Feature record: CXX_FEATURE:0cxx_func_identifier
+    Feature record: CXX_FEATURE:0cxx_generalized_initializers
+    Feature record: CXX_FEATURE:0cxx_generic_lambdas
+    Feature record: CXX_FEATURE:0cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:0cxx_inline_namespaces
+    Feature record: CXX_FEATURE:0cxx_lambdas
+    Feature record: CXX_FEATURE:0cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:0cxx_local_type_template_args
+    Feature record: CXX_FEATURE:0cxx_long_long_type
+    Feature record: CXX_FEATURE:0cxx_noexcept
+    Feature record: CXX_FEATURE:0cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:0cxx_nullptr
+    Feature record: CXX_FEATURE:0cxx_override
+    Feature record: CXX_FEATURE:0cxx_range_for
+    Feature record: CXX_FEATURE:0cxx_raw_string_literals
+    Feature record: CXX_FEATURE:0cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:0cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:0cxx_return_type_deduction
+    Feature record: CXX_FEATURE:0cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:0cxx_rvalue_references
+    Feature record: CXX_FEATURE:0cxx_sizeof_member
+    Feature record: CXX_FEATURE:0cxx_static_assert
+    Feature record: CXX_FEATURE:0cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:0cxx_thread_local
+    Feature record: CXX_FEATURE:0cxx_trailing_return_types
+    Feature record: CXX_FEATURE:0cxx_unicode_literals
+    Feature record: CXX_FEATURE:0cxx_uniform_initialization
+    Feature record: CXX_FEATURE:0cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:0cxx_user_literals
+    Feature record: CXX_FEATURE:0cxx_variable_templates
+    Feature record: CXX_FEATURE:0cxx_variadic_macros
+    Feature record: CXX_FEATURE:0cxx_variadic_templates
+Performing C SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_1a61e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1a61e.dir/build.make CMakeFiles/cmTC_1a61e.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a61e.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_1a61e.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_1a61e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a61e.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_1a61e.dir/src.c.o  -o cmTC_1a61e -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C++ SOURCE FILE Test OpenMP_FLAG_DETECTED succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4beff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4beff.dir/build.make CMakeFiles/cmTC_4beff.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4beff.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -DOpenMP_FLAG_DETECTED -fopenmp   -o CMakeFiles/cmTC_4beff.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4beff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4beff.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -DOpenMP_FLAG_DETECTED -fopenmp    CMakeFiles/cmTC_4beff.dir/src.cxx.o  -o cmTC_4beff -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+
+#include <omp.h>
+int main() {
+#ifdef _OPENMP
+  return 0;
+#else
+  breaks_on_purpose
+#endif
+}
+
+Performing C SOURCE FILE Test CFLAGS_WARN succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_724db/fast"
+/usr/bin/make -f CMakeFiles/cmTC_724db.dir/build.make CMakeFiles/cmTC_724db.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_724db.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCFLAGS_WARN -Wall -Wno-unused -Wunused-value -Wunused-parameter   -o CMakeFiles/cmTC_724db.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_724db
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_724db.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCFLAGS_WARN -Wall -Wno-unused -Wunused-value -Wunused-parameter    CMakeFiles/cmTC_724db.dir/src.c.o  -o cmTC_724db -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CFLAGS_WARN_EXTRA succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d9f4e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d9f4e.dir/build.make CMakeFiles/cmTC_d9f4e.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d9f4e.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCFLAGS_WARN_EXTRA -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith   -o CMakeFiles/cmTC_d9f4e.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d9f4e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9f4e.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCFLAGS_WARN_EXTRA -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith    CMakeFiles/cmTC_d9f4e.dir/src.c.o  -o cmTC_d9f4e -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CFLAGS_WARN_UNDEF succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9692d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9692d.dir/build.make CMakeFiles/cmTC_9692d.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9692d.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCFLAGS_WARN_UNDEF -Wundef   -o CMakeFiles/cmTC_9692d.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9692d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9692d.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCFLAGS_WARN_UNDEF -Wundef    CMakeFiles/cmTC_9692d.dir/src.c.o  -o cmTC_9692d -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CFLAGS_WARN_REL succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2703f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2703f.dir/build.make CMakeFiles/cmTC_2703f.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2703f.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCFLAGS_WARN_REL -Wno-array-bounds   -o CMakeFiles/cmTC_2703f.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_2703f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2703f.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCFLAGS_WARN_REL -Wno-array-bounds    CMakeFiles/cmTC_2703f.dir/src.c.o  -o cmTC_2703f -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CFLAGS_EXCESS_PREC succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fde67/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fde67.dir/build.make CMakeFiles/cmTC_fde67.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fde67.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCFLAGS_EXCESS_PREC -fexcess-precision=fast   -o CMakeFiles/cmTC_fde67.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_fde67
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fde67.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCFLAGS_EXCESS_PREC -fexcess-precision=fast    CMakeFiles/cmTC_fde67.dir/src.c.o  -o cmTC_fde67 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CFLAGS_COPT succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b7a59/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b7a59.dir/build.make CMakeFiles/cmTC_b7a59.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b7a59.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCFLAGS_COPT -funroll-all-loops   -o CMakeFiles/cmTC_b7a59.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_b7a59
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b7a59.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCFLAGS_COPT -funroll-all-loops    CMakeFiles/cmTC_b7a59.dir/src.c.o  -o cmTC_b7a59 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test CFLAGS_NOINLINE succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cbddd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cbddd.dir/build.make CMakeFiles/cmTC_cbddd.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbddd.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCFLAGS_NOINLINE -fno-inline   -o CMakeFiles/cmTC_cbddd.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_cbddd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbddd.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCFLAGS_NOINLINE -fno-inline    CMakeFiles/cmTC_cbddd.dir/src.c.o  -o cmTC_cbddd -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXXFLAGS_WARN succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2a61f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2a61f.dir/build.make CMakeFiles/cmTC_2a61f.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2a61f.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -DCXXFLAGS_WARN -Wall -Wno-unused-function   -o CMakeFiles/cmTC_2a61f.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2a61f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a61f.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -DCXXFLAGS_WARN -Wall -Wno-unused-function    CMakeFiles/cmTC_2a61f.dir/src.cxx.o  -o cmTC_2a61f -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXXFLAGS_WARN_EXTRA succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_62fe1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_62fe1.dir/build.make CMakeFiles/cmTC_62fe1.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_62fe1.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -DCXXFLAGS_WARN_EXTRA -Wextra -Wno-missing-field-initializers -Wpointer-arith   -o CMakeFiles/cmTC_62fe1.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_62fe1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62fe1.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -DCXXFLAGS_WARN_EXTRA -Wextra -Wno-missing-field-initializers -Wpointer-arith    CMakeFiles/cmTC_62fe1.dir/src.cxx.o  -o cmTC_62fe1 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXXFLAGS_WARN_UNDEF succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_14c7c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_14c7c.dir/build.make CMakeFiles/cmTC_14c7c.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_14c7c.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -DCXXFLAGS_WARN_UNDEF -Wundef   -o CMakeFiles/cmTC_14c7c.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_14c7c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14c7c.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -DCXXFLAGS_WARN_UNDEF -Wundef    CMakeFiles/cmTC_14c7c.dir/src.cxx.o  -o cmTC_14c7c -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C SOURCE FILE Test CXXFLAGS_WARN_REL succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_15a90/fast"
+/usr/bin/make -f CMakeFiles/cmTC_15a90.dir/build.make CMakeFiles/cmTC_15a90.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_15a90.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -DCXXFLAGS_WARN_REL -Wno-array-bounds   -o CMakeFiles/cmTC_15a90.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_15a90
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_15a90.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -DCXXFLAGS_WARN_REL -Wno-array-bounds    CMakeFiles/cmTC_15a90.dir/src.c.o  -o cmTC_15a90 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXXFLAGS_EXCESS_PREC succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_54773/fast"
+/usr/bin/make -f CMakeFiles/cmTC_54773.dir/build.make CMakeFiles/cmTC_54773.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_54773.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -DCXXFLAGS_EXCESS_PREC -fexcess-precision=fast   -o CMakeFiles/cmTC_54773.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_54773
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54773.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -DCXXFLAGS_EXCESS_PREC -fexcess-precision=fast    CMakeFiles/cmTC_54773.dir/src.cxx.o  -o cmTC_54773 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXXFLAGS_COPT succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_78096/fast"
+/usr/bin/make -f CMakeFiles/cmTC_78096.dir/build.make CMakeFiles/cmTC_78096.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78096.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -DCXXFLAGS_COPT -funroll-all-loops   -o CMakeFiles/cmTC_78096.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_78096
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78096.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -DCXXFLAGS_COPT -funroll-all-loops    CMakeFiles/cmTC_78096.dir/src.cxx.o  -o cmTC_78096 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXXFLAGS_NOINLINE succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6fe44/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6fe44.dir/build.make CMakeFiles/cmTC_6fe44.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6fe44.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -DCXXFLAGS_NOINLINE -fno-inline   -o CMakeFiles/cmTC_6fe44.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6fe44
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fe44.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -DCXXFLAGS_NOINLINE -fno-inline    CMakeFiles/cmTC_6fe44.dir/src.cxx.o  -o cmTC_6fe44 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Determining if files unistd.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_301ae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_301ae.dir/build.make CMakeFiles/cmTC_301ae.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_301ae.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_301ae.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_301ae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_301ae.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_301ae.dir/CheckIncludeFiles.c.o  -o cmTC_301ae -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files pwd.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_08925/fast"
+/usr/bin/make -f CMakeFiles/cmTC_08925.dir/build.make CMakeFiles/cmTC_08925.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08925.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_08925.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_08925
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08925.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_08925.dir/CheckIncludeFiles.c.o  -o cmTC_08925 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files dirent.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_49d2f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_49d2f.dir/build.make CMakeFiles/cmTC_49d2f.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_49d2f.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_49d2f.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_49d2f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_49d2f.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_49d2f.dir/CheckIncludeFiles.c.o  -o cmTC_49d2f -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files time.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6f663/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6f663.dir/build.make CMakeFiles/cmTC_6f663.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6f663.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_6f663.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_6f663
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6f663.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_6f663.dir/CheckIncludeFiles.c.o  -o cmTC_6f663 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sys/time.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f2d34/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f2d34.dir/build.make CMakeFiles/cmTC_f2d34.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f2d34.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_f2d34.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_f2d34
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2d34.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_f2d34.dir/CheckIncludeFiles.c.o  -o cmTC_f2d34 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files sched.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a8613/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a8613.dir/build.make CMakeFiles/cmTC_a8613.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a8613.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_a8613.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_a8613
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a8613.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_a8613.dir/CheckIncludeFiles.c.o  -o cmTC_a8613 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files regex.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_96eca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_96eca.dir/build.make CMakeFiles/cmTC_96eca.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96eca.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_96eca.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_96eca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96eca.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_96eca.dir/CheckIncludeFiles.c.o  -o cmTC_96eca -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the posix_memalign exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a9873/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a9873.dir/build.make CMakeFiles/cmTC_a9873.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a9873.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_a9873.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_a9873
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9873.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_a9873.dir/CheckSymbolExists.cxx.o  -o cmTC_a9873 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef posix_memalign
+  return ((int*)(&posix_memalign))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the gettimeofday exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ebb29/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ebb29.dir/build.make CMakeFiles/cmTC_ebb29.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ebb29.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_ebb29.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_ebb29
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ebb29.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_ebb29.dir/CheckSymbolExists.cxx.o  -o cmTC_ebb29 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef gettimeofday
+  return ((int*)(&gettimeofday))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the sysconf exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_6d090/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6d090.dir/build.make CMakeFiles/cmTC_6d090.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6d090.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_6d090.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_6d090
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d090.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_6d090.dir/CheckSymbolExists.cxx.o  -o cmTC_6d090 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysconf
+  return ((int*)(&sysconf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the nice exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a82d5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a82d5.dir/build.make CMakeFiles/cmTC_a82d5.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a82d5.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_a82d5.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_a82d5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a82d5.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_a82d5.dir/CheckSymbolExists.cxx.o  -o cmTC_a82d5 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef nice
+  return ((int*)(&nice))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the fsync exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e6a62/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e6a62.dir/build.make CMakeFiles/cmTC_e6a62.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e6a62.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_e6a62.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_e6a62
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6a62.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_e6a62.dir/CheckSymbolExists.cxx.o  -o cmTC_e6a62 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fsync
+  return ((int*)(&fsync))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the fileno exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_70e18/fast"
+/usr/bin/make -f CMakeFiles/cmTC_70e18.dir/build.make CMakeFiles/cmTC_70e18.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_70e18.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_70e18.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_70e18
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70e18.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_70e18.dir/CheckSymbolExists.cxx.o  -o cmTC_70e18 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fileno
+  return ((int*)(&fileno))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the sigaction exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_803bd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_803bd.dir/build.make CMakeFiles/cmTC_803bd.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_803bd.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_803bd.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_803bd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_803bd.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_803bd.dir/CheckSymbolExists.cxx.o  -o cmTC_803bd -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <signal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sigaction
+  return ((int*)(&sigaction))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the sqrtf exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf8a1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf8a1.dir/build.make CMakeFiles/cmTC_cf8a1.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cf8a1.dir/CheckSymbolExists.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function     -o CMakeFiles/cmTC_cf8a1.dir/CheckSymbolExists.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_cf8a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf8a1.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function      CMakeFiles/cmTC_cf8a1.dir/CheckSymbolExists.cxx.o  -o cmTC_cf8a1 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+File /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <math.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sqrtf
+  return ((int*)(&sqrtf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a4c72/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a4c72.dir/build.make CMakeFiles/cmTC_a4c72.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4c72.dir/CheckFunctionExists.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_a4c72.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a4c72
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4c72.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=clock_gettime    CMakeFiles/cmTC_a4c72.dir/CheckFunctionExists.c.o  -o cmTC_a4c72 -rdynamic -lrt 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function feenableexcept exists in the m passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e926e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e926e.dir/build.make CMakeFiles/cmTC_e926e.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e926e.dir/CheckFunctionExists.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=feenableexcept   -o CMakeFiles/cmTC_e926e.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e926e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e926e.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=feenableexcept    CMakeFiles/cmTC_e926e.dir/CheckFunctionExists.c.o  -o cmTC_e926e -rdynamic -lm 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test sched_affinity_compile succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9a258/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9a258.dir/build.make CMakeFiles/cmTC_9a258.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9a258.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -Dsched_affinity_compile   -o CMakeFiles/cmTC_9a258.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_9a258
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a258.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -Dsched_affinity_compile    CMakeFiles/cmTC_9a258.dir/src.c.o  -o cmTC_9a258 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#ifndef _GNU_SOURCE
+#define _GNU_SOURCE 1
+#endif
+#include <sched.h>
+int main(void) {
+  int i;
+  cpu_set_t mask;
+  CPU_ZERO(&mask);
+  sched_getaffinity(0, sizeof(cpu_set_t), &mask);
+  if(CPU_ISSET(0,&mask))
+  {
+    CPU_CLR(0,&mask);
+    CPU_SET(0,&mask);
+  }
+  sched_setaffinity(0, sizeof(cpu_set_t), &mask);
+  return CPU_COUNT(&mask);
+}
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_32939/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32939.dir/build.make CMakeFiles/cmTC_32939.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32939.dir/CheckIncludeFile.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_32939.dir/CheckIncludeFile.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_32939
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32939.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_32939.dir/CheckIncludeFile.c.o  -o cmTC_32939 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a33dd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a33dd.dir/build.make CMakeFiles/cmTC_a33dd.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a33dd.dir/CheckIncludeFile.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_a33dd.dir/CheckIncludeFile.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_a33dd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a33dd.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_a33dd.dir/CheckIncludeFile.c.o  -o cmTC_a33dd -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_32da0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32da0.dir/build.make CMakeFiles/cmTC_32da0.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_32da0.dir/CheckIncludeFile.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_32da0.dir/CheckIncludeFile.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_32da0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32da0.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_32da0.dir/CheckIncludeFile.c.o  -o cmTC_32da0 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b2a2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b2a2.dir/build.make CMakeFiles/cmTC_3b2a2.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b2a2.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_3b2a2.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTC_3b2a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b2a2.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_3b2a2.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTC_3b2a2 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f28b0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f28b0.dir/build.make CMakeFiles/cmTC_f28b0.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f28b0.dir/TestEndianess.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_f28b0.dir/TestEndianess.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_f28b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f28b0.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_f28b0.dir/TestEndianess.c.o  -o cmTC_f28b0 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function zlibVersion exists in the /usr/lib/x86_64-linux-gnu/libz.so passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c68fd/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c68fd.dir/build.make CMakeFiles/cmTC_c68fd.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c68fd.dir/CheckFunctionExists.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=zlibVersion   -o CMakeFiles/cmTC_c68fd.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c68fd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c68fd.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=zlibVersion    CMakeFiles/cmTC_c68fd.dir/CheckFunctionExists.c.o  -o cmTC_c68fd -rdynamic /usr/lib/x86_64-linux-gnu/libz.so 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function xmlTextWriterEndAttribute exists in the /usr/lib/x86_64-linux-gnu/libxml2.so passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4aed2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4aed2.dir/build.make CMakeFiles/cmTC_4aed2.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4aed2.dir/CheckFunctionExists.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=xmlTextWriterEndAttribute   -o CMakeFiles/cmTC_4aed2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4aed2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4aed2.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=xmlTextWriterEndAttribute    CMakeFiles/cmTC_4aed2.dir/CheckFunctionExists.c.o  -o cmTC_4aed2 -rdynamic /usr/lib/x86_64-linux-gnu/libxml2.so 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files libxml/parser.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd670/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd670.dir/build.make CMakeFiles/cmTC_fd670.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd670.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc   -I/usr/include/libxml2  -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_fd670.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_fd670
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd670.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_fd670.dir/CheckIncludeFiles.c.o  -o cmTC_fd670 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f24a4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f24a4.dir/build.make CMakeFiles/cmTC_f24a4.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f24a4.dir/CheckIncludeFile.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_f24a4.dir/CheckIncludeFile.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_f24a4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f24a4.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_f24a4.dir/CheckIncludeFile.c.o  -o cmTC_f24a4 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b27fb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b27fb.dir/build.make CMakeFiles/cmTC_b27fb.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b27fb.dir/CheckFunctionExists.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_b27fb.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b27fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b27fb.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_b27fb.dir/CheckFunctionExists.c.o  -o cmTC_b27fb -rdynamic -lpthread 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if files pthread.h exist passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_856de/fast"
+/usr/bin/make -f CMakeFiles/cmTC_856de.dir/build.make CMakeFiles/cmTC_856de.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_856de.dir/CheckIncludeFiles.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_856de.dir/CheckIncludeFiles.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+Linking C executable cmTC_856de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_856de.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_856de.dir/CheckIncludeFiles.c.o  -o cmTC_856de -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test PTHREAD_SETAFFINITY succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ea17d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ea17d.dir/build.make CMakeFiles/cmTC_ea17d.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ea17d.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DPTHREAD_SETAFFINITY   -o CMakeFiles/cmTC_ea17d.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ea17d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea17d.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DPTHREAD_SETAFFINITY    CMakeFiles/cmTC_ea17d.dir/src.c.o  -o cmTC_ea17d -rdynamic -lpthread 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#define _GNU_SOURCE
+#include <pthread.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <errno.h>
+    int main(void) { cpu_set_t set;
+        CPU_ZERO(&set);
+        CPU_SET(0, &set);
+        pthread_setaffinity_np(pthread_self(), sizeof(set), &set);
+        return 0;
+    }
+Performing C SOURCE FILE Test isfinite_compile_ok succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8137f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8137f.dir/build.make CMakeFiles/cmTC_8137f.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8137f.dir/src.c.o
+/import/GCC/5.2/bin/gcc   -I/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/math.h  -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -Disfinite_compile_ok   -o CMakeFiles/cmTC_8137f.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_8137f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8137f.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -Disfinite_compile_ok    CMakeFiles/cmTC_8137f.dir/src.c.o  -o cmTC_8137f -rdynamic -lm 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <math.h>
+int main(void) {
+  float f;
+  isfinite(f);
+  return 0;
+}
+Performing C++ SOURCE FILE Test CXXFLAG_STD_CXX0X succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8d090/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8d090.dir/build.make CMakeFiles/cmTC_8d090.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8d090.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DCXXFLAG_STD_CXX0X -std=c++0x   -o CMakeFiles/cmTC_8d090.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8d090
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d090.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DCXXFLAG_STD_CXX0X -std=c++0x    CMakeFiles/cmTC_8d090.dir/src.cxx.o  -o cmTC_8d090 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test GMX_CXX11_SUPPORTED succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_57aaf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_57aaf.dir/build.make CMakeFiles/cmTC_57aaf.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_57aaf.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DGMX_CXX11_SUPPORTED -std=c++0x   -o CMakeFiles/cmTC_57aaf.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_57aaf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57aaf.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DGMX_CXX11_SUPPORTED -std=c++0x    CMakeFiles/cmTC_57aaf.dir/src.cxx.o  -o cmTC_57aaf -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <vector>
+#include <memory>
+#include <utility>
+struct A {
+  A(int *i=NULL) : p(i) {} ;
+  std::unique_ptr<int> p;
+};
+template <typename Head, typename... Tail>
+struct VarList {
+  typedef VarList<Tail...> VarListTail;
+  typedef std::pair<Head, typename VarListTail::ListType> ListType;
+};
+class a { explicit operator bool() {return true;} };
+int main() {
+  typedef std::unique_ptr<int> intPointer;
+  intPointer p(new int(10));
+  std::vector<intPointer> v;
+  v.push_back(std::move(p));
+  std::vector<A> v2;
+  v2.push_back(A());  //requires default move constructor
+  v2.push_back(A(new int(5))); //detects bug in ICC
+}
+Performing C SOURCE FILE Test C_FLAG_march_core_avx2 succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ed19b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed19b.dir/build.make CMakeFiles/cmTC_ed19b.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ed19b.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DC_FLAG_march_core_avx2 -march=core-avx2   -o CMakeFiles/cmTC_ed19b.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ed19b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed19b.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DC_FLAG_march_core_avx2 -march=core-avx2    CMakeFiles/cmTC_ed19b.dir/src.c.o  -o cmTC_ed19b -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SIMD_COMPILES_FLAG_march_core_avx2 succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_37021/fast"
+/usr/bin/make -f CMakeFiles/cmTC_37021.dir/build.make CMakeFiles/cmTC_37021.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_37021.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DC_SIMD_COMPILES_FLAG_march_core_avx2  -march=core-avx2   -o CMakeFiles/cmTC_37021.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_37021
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37021.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DC_SIMD_COMPILES_FLAG_march_core_avx2  -march=core-avx2    CMakeFiles/cmTC_37021.dir/src.c.o  -o cmTC_37021 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include<immintrin.h>
+                              int main(){__m256i x=_mm256_set1_epi32(5);x=_mm256_add_epi32(x,x);return _mm256_movemask_epi8(x);}
+Performing C++ SOURCE FILE Test CXX_FLAG_march_core_avx2 succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_e6e7a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e6e7a.dir/build.make CMakeFiles/cmTC_e6e7a.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e6e7a.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DCXX_FLAG_march_core_avx2 -march=core-avx2   -o CMakeFiles/cmTC_e6e7a.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e6e7a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6e7a.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DCXX_FLAG_march_core_avx2 -march=core-avx2    CMakeFiles/cmTC_e6e7a.dir/src.cxx.o  -o cmTC_e6e7a -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test CXX_SIMD_COMPILES_FLAG_march_core_avx2 succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_60ae1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_60ae1.dir/build.make CMakeFiles/cmTC_60ae1.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_60ae1.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DCXX_SIMD_COMPILES_FLAG_march_core_avx2  -march=core-avx2   -o CMakeFiles/cmTC_60ae1.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_60ae1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60ae1.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DCXX_SIMD_COMPILES_FLAG_march_core_avx2  -march=core-avx2    CMakeFiles/cmTC_60ae1.dir/src.cxx.o  -o cmTC_60ae1 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include<immintrin.h>
+                                int main(){__m256i x=_mm256_set1_epi32(5);x=_mm256_add_epi32(x,x);return _mm256_movemask_epi8(x);}
+Performing C SOURCE FILE Test _callconv_ succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_d183d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d183d.dir/build.make CMakeFiles/cmTC_d183d.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d183d.dir/src.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -D_callconv_   -o CMakeFiles/cmTC_d183d.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d183d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d183d.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -D_callconv_    CMakeFiles/cmTC_d183d.dir/src.c.o  -o cmTC_d183d -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int  f(int i) {return i;} int main(void) {return f(0);}
+Determining if the function sgemm_ exists passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_b2943/fast"
+/usr/bin/make -f CMakeFiles/cmTC_b2943.dir/build.make CMakeFiles/cmTC_b2943.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b2943.dir/CheckFunctionExists.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_b2943.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_b2943
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b2943.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=sgemm_    CMakeFiles/cmTC_b2943.dir/CheckFunctionExists.c.o  -o cmTC_b2943 -rdynamic /usr/lib/libopenblas.so 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function cheev_ exists passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_a99e5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a99e5.dir/build.make CMakeFiles/cmTC_a99e5.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a99e5.dir/CheckFunctionExists.c.o
+/import/GCC/5.2/bin/gcc    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=cheev_   -o CMakeFiles/cmTC_a99e5.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.7/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a99e5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a99e5.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DCHECK_FUNCTION_EXISTS=cheev_    CMakeFiles/cmTC_a99e5.dir/CheckFunctionExists.c.o  -o cmTC_a99e5 -rdynamic /usr/lib/libopenblas.so /usr/lib/libopenblas.so 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Performing C SOURCE FILE Test HAVE_DLOPEN succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_16b66/fast"
+/usr/bin/make -f CMakeFiles/cmTC_16b66.dir/build.make CMakeFiles/cmTC_16b66.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16b66.dir/src.c.o
+/import/GCC/5.2/bin/gcc   -I/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/dlfcn.h  -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DHAVE_DLOPEN   -o CMakeFiles/cmTC_16b66.dir/src.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_16b66
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16b66.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter  -DHAVE_DLOPEN    CMakeFiles/cmTC_16b66.dir/src.c.o  -o cmTC_16b66 -rdynamic -ldl 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+#include <dlfcn.h>
+int main(void) {
+  dlopen(0,0);
+  return 0;
+}
+Performing C++ SOURCE FILE Test HAS_NO_UNUSED_VARIABLE succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_88bb7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_88bb7.dir/build.make CMakeFiles/cmTC_88bb7.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_88bb7.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -march=core-avx2   -std=c++0x  -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DHAS_NO_UNUSED_VARIABLE -Wno-unused-variable   -o CMakeFiles/cmTC_88bb7.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_88bb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_88bb7.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -march=core-avx2   -std=c++0x  -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DHAS_NO_UNUSED_VARIABLE -Wno-unused-variable    CMakeFiles/cmTC_88bb7.dir/src.cxx.o  -o cmTC_88bb7 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_25d0d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_25d0d.dir/build.make CMakeFiles/cmTC_25d0d.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25d0d.dir/TestEndianess.c.o
+/import/GCC/5.2/bin/gcc    -march=core-avx2    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_25d0d.dir/TestEndianess.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_25d0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25d0d.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -march=core-avx2    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_25d0d.dir/TestEndianess.c.o  -o cmTC_25d0d -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the include file inttypes.h exists passed with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_21ba9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_21ba9.dir/build.make CMakeFiles/cmTC_21ba9.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_21ba9.dir/CheckIncludeFile.c.o
+/import/GCC/5.2/bin/gcc    -march=core-avx2    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter     -o CMakeFiles/cmTC_21ba9.dir/CheckIncludeFile.c.o   -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_21ba9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21ba9.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/gcc   -march=core-avx2    -Wundef -Wextra -Wno-missing-field-initializers -Wno-sign-compare -Wpointer-arith -Wall -Wno-unused -Wunused-value -Wunused-parameter      CMakeFiles/cmTC_21ba9.dir/CheckIncludeFile.c.o  -o cmTC_21ba9 -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+
+Performing C++ SOURCE FILE Test HAS_NO_UNUSED_PARAMETER succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_17c7e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_17c7e.dir/build.make CMakeFiles/cmTC_17c7e.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17c7e.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -march=core-avx2   -std=c++0x  -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DHAS_NO_UNUSED_PARAMETER -Wno-unused-parameter   -o CMakeFiles/cmTC_17c7e.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_17c7e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17c7e.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -march=core-avx2   -std=c++0x  -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DHAS_NO_UNUSED_PARAMETER -Wno-unused-parameter    CMakeFiles/cmTC_17c7e.dir/src.cxx.o  -o cmTC_17c7e -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
+Performing C++ SOURCE FILE Test HAS_NO_DEPRECATED_REGISTER succeeded with the following output:
+Change Dir: /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0b2ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0b2ff.dir/build.make CMakeFiles/cmTC_0b2ff.dir/build
+make[1]: Entering directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0b2ff.dir/src.cxx.o
+/import/GCC/5.2/bin/g++     -march=core-avx2   -std=c++0x  -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DHAS_NO_DEPRECATED_REGISTER -Wno-deprecated-register   -o CMakeFiles/cmTC_0b2ff.dir/src.cxx.o -c /home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_0b2ff
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b2ff.dir/link.txt --verbose=1
+/import/GCC/5.2/bin/g++    -march=core-avx2   -std=c++0x  -Wundef -Wextra -Wno-missing-field-initializers -Wpointer-arith -Wall -Wno-unused-function  -DHAS_NO_DEPRECATED_REGISTER -Wno-deprecated-register    CMakeFiles/cmTC_0b2ff.dir/src.cxx.o  -o cmTC_0b2ff -rdynamic 
+make[1]: Leaving directory '/home/mi/johnwhittake/software/gromacs-510-fcDelta/build/CMakeFiles/CMakeTmp'
+
+Source file was:
+int main() { return 0;}
