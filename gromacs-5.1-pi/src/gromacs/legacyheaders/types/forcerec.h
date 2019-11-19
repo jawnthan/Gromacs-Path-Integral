@@ -457,6 +457,12 @@ typedef struct {
     t_forcetable *  atf_tabs;
     real            adress_ex_forcecap;
     gmx_bool        adress_do_hybridpairs;
+    gmx_bool        adress_scale_coulomb;
+    real            adress_scale_coulomb;
+    int             n_pi_grps; /* Trotter number */
+    real         ** adress_NM_M; /* transformation matrix for nm */
+    real          * adress_NM_mu; /* (mu/m0) where mu is the artificial mass and m0 the real mass */
+    gmx_bool        adress_PI_ExclUserGrp;
 
     /* User determined parameters, copied from the inputrec */
     int  userint1;
