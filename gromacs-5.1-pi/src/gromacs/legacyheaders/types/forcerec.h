@@ -457,7 +457,6 @@ typedef struct {
     t_forcetable *  atf_tabs;
     real            adress_ex_forcecap;
     gmx_bool        adress_do_hybridpairs;
-    gmx_bool        adress_scale_coulomb;
     real            adress_scale_coulomb;
     int             n_pi_grps; /* Trotter number */
     real         ** adress_NM_M; /* transformation matrix for nm */
