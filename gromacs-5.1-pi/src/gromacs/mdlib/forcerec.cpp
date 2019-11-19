@@ -2379,6 +2379,19 @@ void init_forcerec(FILE              *fp,
     fr->userreal2 = ir->userreal2;
     fr->userreal3 = ir->userreal3;
     fr->userreal4 = ir->userreal4;
+    fr->adress_scale_coulomb = ir->scale_coulomb;
+    fr->adress_do_nm = ir->do_nm;
+    if (fr->adress_do_nm)
+    {
+        if (ir->n_pi_grps<=1)
+	{
+            gmx_fatal(FARGS,"For using normal modes the Trotter number has to be >2");
+        }
+
+        InitNMMatrix(ir->n_pi_grps, fr);
+        fr->n_pi_grps=ir->n_pi_grps;
+    }
+
 
     /* Shell stuff */
     fr->fc_stepsize = ir->fc_stepsize;

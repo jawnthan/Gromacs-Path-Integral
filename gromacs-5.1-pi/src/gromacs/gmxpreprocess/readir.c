@@ -1440,6 +1440,8 @@ nd %s",
       if ((ir->do_nm)){
            if ((ir->eI != eiSD1)){
              warning_error(wi,"For the use of normal mode integrator only sd is supported");
+	   }
+      }
 	if (ir->epc != epcNO)
         {
             warning_error(wi, "AdresS simulation does not support pressure coupling");
