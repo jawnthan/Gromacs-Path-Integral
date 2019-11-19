@@ -2379,6 +2379,8 @@ void init_forcerec(FILE              *fp,
     fr->userreal2 = ir->userreal2;
     fr->userreal3 = ir->userreal3;
     fr->userreal4 = ir->userreal4;
+    fr->adress_scale_coulomb = ir->scale_coulomb;
+    fr->adress_do_nm = ir->do_nm;
 
     /* Shell stuff */
     fr->fc_stepsize = ir->fc_stepsize;
