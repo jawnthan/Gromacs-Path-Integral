@@ -1436,7 +1436,8 @@ nd %s",
         {
             warning_error(wi, "AdresS simulation supports only stochastic dynamics");
         }
-*/      if ((ir->do_nm)){
+*/
+      if ((ir->do_nm)){
            if ((ir->eI != eiSD1)){
              warning_error(wi,"For the use of normal mode integrator only sd is supported");
 	if (ir->epc != epcNO)
