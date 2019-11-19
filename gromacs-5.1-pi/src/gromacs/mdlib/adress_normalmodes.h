@@ -1,17 +1,17 @@
 #ifndef _adress_normalmodes_h_
 #define _adress_normalmodes_h_
 
-#include "maths.h"
-#include "pbc.h"
-#include "types/simple.h"
-#include "typedefs.h"
-#include "vec.h"
+#include "math.h"
+#include "gromacs/pbcutil/pbc.h"
+#include "gromacs/legacyheaders/types/simple.h"
+#include "gromacs/legacyheaders/typedefs.h"
+#include "gromacs/math/vec.h"
 #include "adress_normalmodes.h"
-#include "update.h"
-#include "smalloc.h"
-#include "types/state.h"
-#include "partdec.h"
-#include "types/commrec.h"
+#include "gromacs/legacyheaders/update.h"
+#include "gromacs/utility/smalloc.h"
+#include "gromacs/legacyheaders/types/state.h"
+//#include "partdec.h"
+#include "gromacs/legacyheaders/types/commrec.h"
 
 void calc_force_on_cg (int                  cg0,
 		         int                  cg1,
