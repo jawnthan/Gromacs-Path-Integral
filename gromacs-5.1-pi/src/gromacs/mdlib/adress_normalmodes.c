@@ -70,7 +70,7 @@ typedef struct gmx_update
 	rvec *xp;
 	int  xp_nalloc;
 	/* Variables for the deform algorithm */
-	gmx_large_int_t deformref_step;
+	gmx_int64_t deformref_step;
 	matrix     deformref_box;
 } t_gmx_update;
 
@@ -244,6 +244,9 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
                         if (bp < n0)
                            bp = n1 - 1;
         //                printf("n0 %d n1 %d n %d fp %d bp %d \n", n0, n1, n, fp, bp);
+			
+			gmx_rng_cycle_3gaussian_table(step, ng, seed, RND_SEED_UPDATE, rnd);
+
 			/* velocity update step in real space*/
 			for (d = 0; d < DIM; d++) {
 				if ((ptype[n] != eptVSite) && (ptype[n] != eptShell) && !nFreeze[gf][d]) {
@@ -252,7 +255,7 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
                                         bdd = -kk * (x[bp][d] - x[n][d]);
                                         fh[n-n0][d] = f[n][d] - fdd + bdd;
                                        // printf("n %d dim %d force %f \n", n, d, fh[n-n0][d]);
-                                        sd_V = ism*sig[gt].V*gmx_rng_gaussian_table(gaussrand);
+                                        sd_V = ism*sig[gt].V*rnd[d];
 					/* sdc.em is defined as exp(-delta_t/tau) in update.c*/
 				        v[n][d] = v[n][d]*sdc[gt].em + (invmass[n]*fh[n-n0][d] + accel[ga][d])*tau_t[gt]*(1 - sdc[gt].em) + sd_V;   
 				}
