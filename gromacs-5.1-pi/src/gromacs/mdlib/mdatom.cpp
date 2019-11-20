@@ -220,6 +220,7 @@ void atoms2md(gmx_mtop_t *mtop, t_inputrec *ir,
         {
             srenew(md->wf, md->nalloc);
             srenew(md->tf_table_index, md->nalloc);
+	    srenew(md->ring_force, md->nalloc);
         }
     }
 

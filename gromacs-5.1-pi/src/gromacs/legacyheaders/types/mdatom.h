@@ -77,6 +77,7 @@ typedef struct {
     /* The AdResS weighting function */
     real                  *wf;
     unsigned short        *tf_table_index; /* The tf table that will be applied, if thermodyn, force enabled*/
+    rvec *                 ring_force;
 } t_mdatoms;
 
 #ifdef __cplusplus
