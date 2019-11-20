@@ -10,7 +10,7 @@
 #include "gromacs/legacyheaders/types/commrec.h"
 #include "gromacs/legacyheaders/nrnb.h"
 
-#define PARTDECOMP(cr)     ((cr)->pd != NULL)
+//#define PARTDECOMP(cr)     ((cr)->pd != NULL)
 
 #include "gromacs/math/vec.h"
 #include "adress_normalmodes.h"
@@ -24,7 +24,7 @@
 #include "gromacs/utility/gmxomp.h"
 #include "gromacs/random/random.h"
 
-#define PARTDECOMP(cr)     ((cr)->pd != NULL)
+//#define PARTDECOMP(cr)     ((cr)->pd != NULL)
 
 typedef struct {
 	double gdt;
@@ -358,12 +358,13 @@ void update_coords_nm(
 //	printf("update_coords_nm\n");
 //	printf("cr nodeid %d\n", cr->nodeid);
 	
-         if (PARTDECOMP(cr))
+/*         if (PARTDECOMP(cr))
 	 {
          //        printf("hi \n");
 		 pd_cg_range(cr,&cg0,&cg1);
 	 }
-	 else
+*/
+	 if
 	 {
 		 cg0 = 0;
 		 if (DOMAINDECOMP(cr))
