@@ -6,12 +6,16 @@
 #include "gromacs/legacyheaders/types/simple.h"
 #include "gromacs/legacyheaders/typedefs.h"
 #include "gromacs/math/vec.h"
-#include "adress_normalmodes.h"
+//#include "adress_normalmodes.h"
 #include "gromacs/legacyheaders/update.h"
 #include "gromacs/utility/smalloc.h"
 #include "gromacs/legacyheaders/types/state.h"
 //#include "partdec.h"
 #include "gromacs/legacyheaders/types/commrec.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 void calc_force_on_cg (int                  cg0,
 		         int                  cg1,
@@ -33,4 +37,9 @@ void update_coords_nm(
 		  gmx_ekindata_t *ekind,
 		  t_nrnb *nrnb);
 void InitNMMatrix(int P, t_forcerec *fr);
+
+#ifdef __cplusplus
+}
+#endif
+
 #endif

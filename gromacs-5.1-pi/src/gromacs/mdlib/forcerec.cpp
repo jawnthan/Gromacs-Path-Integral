@@ -2382,6 +2382,8 @@ void init_forcerec(FILE              *fp,
     fr->userreal4 = ir->userreal4;
     fr->adress_scale_coulomb = ir->scale_coulomb;
     fr->adress_do_nm = ir->do_nm;
+    /* Shell stuff */
+    fr->fc_stepsize = ir->fc_stepsize;
     if (fr->adress_do_nm)
     {
         if (ir->n_pi_grps<=1)
@@ -2392,10 +2394,6 @@ void init_forcerec(FILE              *fp,
         InitNMMatrix(ir->n_pi_grps, fr);
         fr->n_pi_grps=ir->n_pi_grps;
     }
-
-
-    /* Shell stuff */
-    fr->fc_stepsize = ir->fc_stepsize;
 
     /* Free energy */
     fr->efep        = ir->efep;

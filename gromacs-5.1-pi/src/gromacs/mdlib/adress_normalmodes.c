@@ -364,20 +364,18 @@ void update_coords_nm(
 		 pd_cg_range(cr,&cg0,&cg1);
 	 }
 */
-	 if
-	 {
-		 cg0 = 0;
-		 if (DOMAINDECOMP(cr))
-		 {
+        cg0 = 0;
+        if (DOMAINDECOMP(cr))
+	{
            //              printf("hi 1 \n");
-			 cg1 = cr->dd->ncg_home;
-		 }
-		 else
-		 {
+	    cg1 = cr->dd->ncg_home;
+	}
+	else
+	{
              //            printf("hi 2 \n");
-			 cg1 = top->cgs.nr;
-		 }
-	 }
+	    cg1 = top->cgs.nr;
+        }
+	 
 
         // printf("cg0 %d cg1 %d \n", cg0, cg1);
 	 xprime = get_xprime(state,upd);
