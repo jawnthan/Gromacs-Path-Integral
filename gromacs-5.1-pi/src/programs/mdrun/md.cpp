@@ -1441,7 +1441,7 @@ double do_md(FILE *fplog, t_commrec *cr, int nfile, const t_filenm fnm[],
 	    else
 	    {
 		/* adress normal mode integrator */
-	        update_coords_nm(ir, mdatoms, state, f, upd, top, cr, fr, ekind, nrnb);
+	        update_coords_nm(step, ir, mdatoms, state, f, upd, top, cr, fr, ekind, nrnb);
 	    }
 
             wallcycle_stop(wcycle, ewcUPDATE);

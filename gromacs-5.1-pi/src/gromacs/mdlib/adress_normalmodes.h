@@ -26,6 +26,7 @@ void calc_force_on_cg (int                  cg0,
 			 rvec       f[]);
 
 void update_coords_nm(
+		  gmx_int64_t  step,
 		  t_inputrec   *inputrec,      /* input record and box stuff  */
 		  t_mdatoms    *md,
 		  t_state      *state,

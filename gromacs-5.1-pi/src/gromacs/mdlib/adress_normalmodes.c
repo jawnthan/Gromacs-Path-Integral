@@ -3,7 +3,7 @@
 #include "gromacs/legacyheaders/types/simple.h"
 #include "gromacs/legacyheaders/typedefs.h"
 #include "gromacs/math/vec.h"
-#include "adress_normalmodes.h"
+//#include "adress_normalmodes.h"
 #include "gromacs/legacyheaders/update.h"
 #include "gromacs/utility/smalloc.h"
 #include "gromacs/legacyheaders/types/state.h"
@@ -44,13 +44,7 @@ typedef struct {
 } gmx_sd_sigma_t;
 
 
-typedef struct {
-    /* The random state for ngaussrand threads.
-     * Normal thermostats need just 1 random number generator,
-     * but SD and BD with OpenMP parallelization need 1 for each thread.
-     */
-    int             ngaussrand;
-    gmx_rng_t       *gaussrand;
+typedef struct { 
     /* BD stuff */
     real           *bd_rf;
     /* SD stuff */
@@ -66,13 +60,71 @@ typedef struct {
 typedef struct gmx_update
 {
 	gmx_stochd_t *sd;
+	/* xprime for constraint algorithms */
 	rvec *xp;
 	int  xp_nalloc;
+
 	/* Variables for the deform algorithm */
 	gmx_int64_t deformref_step;
 	matrix     deformref_box;
 } t_gmx_update;
 
+static gmx_stochd_t *init_stochd(t_inputrec *ir)
+{
+    gmx_stochd_t   *sd;
+    gmx_sd_const_t *sdc;
+    int             ngtc, n;
+    real            y;
+
+    snew(sd, 1);
+
+    ngtc = ir->opts.ngtc;
+
+    if (EI_SD(ir->eI))
+    {
+        snew(sd->sdc, ngtc);
+        snew(sd->sdsig, ngtc);
+
+        sdc = sd->sdc;
+        for (n = 0; n < ngtc; n++)
+        {
+            if (ir->opts.tau_t[n] > 0)
+            {
+                sdc[n].gdt = ir->delta_t/ir->opts.tau_t[n];
+                sdc[n].eph = exp(sdc[n].gdt/2);
+                sdc[n].emh = exp(-sdc[n].gdt/2);
+                sdc[n].em  = exp(-sdc[n].gdt);
+            }
+            else
+            {
+                /* No friction and noise on this group */
+                sdc[n].gdt = 0;
+                sdc[n].eph = 1;
+                sdc[n].emh = 1;
+                sdc[n].em  = 1;
+            }
+        }
+    }
+    return sd;
+}
+
+/*gmx_update_t init_update(t_inputrec *ir)
+{
+    t_gmx_update *upd;
+
+    snew(upd, 1);
+
+    if (ir->eI == eiBD || EI_SD(ir->eI) || ir->etc == etcVRESCALE || ETC_ANDERSEN(ir->etc))
+    {
+        upd->sd    = init_stochd(ir);
+    }
+
+    upd->xp        = NULL;
+    upd->xp_nalloc = 0;
+
+    return upd;
+}
+*/
 static rvec *get_xprime(const t_state *state,gmx_update_t upd)
 {
 	if (state->nalloc > upd->xp_nalloc)
@@ -82,6 +134,7 @@ static rvec *get_xprime(const t_state *state,gmx_update_t upd)
 	}
 	return upd->xp;
 }
+
 
 void calc_force_on_cg(int cg0, int cg1, t_block * cgs, rvec x[], t_forcerec * fr, t_mdatoms * mdatoms, rvec f[])
 {
@@ -148,18 +201,19 @@ static void inverse_nm_transform(rvec *x, rvec *u, int P, t_forcerec * fr)
 }
 
 
-static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand, 
-		          int start,int nrend,double dt,
-			  rvec accel[],ivec nFreeze[],
-			  real invmass[],unsigned short ptype[],
-			  unsigned short cFREEZE[],unsigned short cACC[],
+static void do_update_sd1_nm(gmx_stochd_t *sd, 
+		          int start, int nrend, double dt,
+			  rvec accel[], ivec nFreeze[],
+			  real invmass[], unsigned short ptype[],
+			  unsigned short cFREEZE[], unsigned short cACC[],
 			  unsigned short cTC[],
-			  rvec x[],rvec xprime[],rvec v[],rvec f[],
-			  rvec sd_X[],
-			  int ngtc,real tau_t[],real ref_t[],
-			  int cg0, int cg1, t_block *  cgs, t_commrec    *cr, 
+			  rvec x[], rvec xprime[], rvec v[], rvec f[],
+			  rvec sd_X[], int ngtc, real ref_t[],
+			  int cg0, int cg1, t_block * cgs, t_commrec *cr, 
 			  t_forcerec *fr, gmx_ekindata_t *ekind, t_nrnb *nrnb,
-			  t_mdatoms    *md,  t_inputrec   *inputrec) {
+			  t_mdatoms *md, t_inputrec *inputrec,
+			  gmx_int64_t step, int seed, int* gatindex)
+{
 	gmx_sd_const_t *sdc;
 	gmx_sd_sigma_t *sig;
 	real kT;
@@ -188,17 +242,28 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
         snew(qvnew, fr->n_pi_grps);
 	sdc = sd->sdc;
 	sig = sd->sdsig;
+
+/*	printf("hibefore\n");
+	printf("sdc.em = %f\n", sdc[0].em);
+	printf("hiafter\n");
+*/
+
 	if (nrend > sd->sd_V_nalloc)
 	{
 		 sd->sd_V_nalloc = over_alloc_dd(nrend);
 		 srenew(sd->sd_V,sd->sd_V_nalloc);
 	}
+	printf("hi2\n");
 	for(n = 0; n < ngtc; n++)
 	{
+		printf("n = %d\n", n);
 		kT = BOLTZ*ref_t[n];
+		printf("kT = %f\n", kT);
+		printf("sdc[n].em = %f\n", sdc[n].em);
 		/* The mass is encounted for later, since this differs per atom */
 		sig[n].V  = sqrt(kT*(1 - sdc[n].em * sdc[n].em));
 	}
+	printf("hi3\n");
 	/* for kinetic energy*/
  	for (g = 0; (g < opts->ngtc); g++) {
 		copy_mat(tcstat[g].ekinh,tcstat[g].ekinh_old);
@@ -222,7 +287,8 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
 
 
  
-              for (n = n0; (n < n1); n++) {
+              for (n = n0; (n < n1); n++) 
+	      {
 
 			if (cFREEZE) {
 				gf = cFREEZE[n];
@@ -233,6 +299,9 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
 			if (cTC) {
 				gt = cTC[n];
 			}
+
+			real rnd[3];
+			int ng = gatindex ? gatindex[n] : n;
 		        ism = sqrt(invmass[n]);
                         kk = md->massT[n] * omg * omg;                                              
         //                printf("kk %f \n", kk);
@@ -244,19 +313,23 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
                            bp = n1 - 1;
         //                printf("n0 %d n1 %d n %d fp %d bp %d \n", n0, n1, n, fp, bp);
 			
-	//		gmx_rng_cycle_3gaussian_table(step, ng, seed, RND_SEED_UPDATE, rnd);
+			gmx_rng_cycle_3gaussian_table(step, ng, seed, RND_SEED_UPDATE, rnd);
 
 			/* velocity update step in real space*/
-			for (d = 0; d < DIM; d++) {
-				if ((ptype[n] != eptVSite) && (ptype[n] != eptShell) && !nFreeze[gf][d]) {
-	         			
+			for (d = 0; d < DIM; d++)
+		       	{
+				if ((ptype[n] != eptVSite) && (ptype[n] != eptShell) && !nFreeze[gf][d])
+			       	{
+	         			real vn;
+
                                         fdd = -kk * (x[n][d] - x[fp][d]);
                                         bdd = -kk * (x[bp][d] - x[n][d]);
                                         fh[n-n0][d] = f[n][d] - fdd + bdd;
                                        // printf("n %d dim %d force %f \n", n, d, fh[n-n0][d]);
-                                        sd_V = ism*sig[gt].V*gmx_rng_gaussian_table(gaussrand);
-					/* sdc.em is defined as exp(-delta_t/tau) in update.c*/
-				        v[n][d] = v[n][d]*sdc[gt].em + (invmass[n]*fh[n-n0][d] + accel[ga][d])*tau_t[gt]*(1 - sdc[gt].em) + sd_V;   
+                                        sd_V = ism*sig[gt].V*rnd[d];
+					vn   = v[n][d] + (invmass[n]*fh[n-n0][d] + accel[ga][d])*dt;
+					/* sdc.em is defined as exp(-delta_t/tau) in update.c */ // ???
+				        v[n][d] = vn*sdc[gt].em + (invmass[n]*fh[n-n0][d] + accel[ga][d]);   
 				}
                                 else
                                 {
@@ -328,6 +401,7 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
 }
 
 void update_coords_nm(
+		  gmx_int64_t  step,
 		  t_inputrec   *inputrec,      /* input record and box stuff  */
 		  t_mdatoms    *md,
 		  t_state      *state,
@@ -367,7 +441,7 @@ void update_coords_nm(
         cg0 = 0;
         if (DOMAINDECOMP(cr))
 	{
-                        printf("hi 1 \n");
+//            printf("hi 1 \n");
 	    cg1 = cr->dd->ncg_home;
 	}
 	else
@@ -388,13 +462,17 @@ void update_coords_nm(
          int start_th, end_th;
          start_th = start + ((nrend-start)* th   )/nth;
          end_th   = start + ((nrend-start)*(th+1))/nth;
-	 do_update_sd1_nm(upd->sd, upd->sd->gaussrand[th], start_th, end_th,dt,
-			    inputrec->opts.acc,inputrec->opts.nFreeze,
-			    md->invmass,md->ptype,
-			    md->cFREEZE,md->cACC,md->cTC,
-			    state->x,xprime,state->v,force,state->sd_X,
-			    inputrec->opts.ngtc,inputrec->opts.tau_t,inputrec->opts.ref_t,
-			    cg0, cg1, &(top->cgs), cr, fr, ekind, nrnb, md, inputrec);
+	 do_update_sd1_nm(upd->sd,
+			  start_th, end_th, dt,
+			  inputrec->opts.acc, inputrec->opts.nFreeze,
+			  md->invmass, md->ptype,
+			  md->cFREEZE, md->cACC, md->cTC,
+			  state->x, xprime, state->v, force,
+			  state->sd_X,
+			  inputrec->opts.ngtc, inputrec->opts.ref_t,
+			  cg0, cg1, &(top->cgs), cr, fr, ekind, nrnb, 
+			  md, inputrec, step, inputrec->ld_seed,
+			  DOMAINDECOMP(cr) ? cr->dd->gatindex : NULL);
          }
 
 }
