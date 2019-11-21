@@ -1429,9 +1429,20 @@ double do_md(FILE *fplog, t_commrec *cr, int nfile, const t_filenm fnm[],
             }
             bUpdateDoLR = (fr->bTwinRange && do_per_step(step, ir->nstcalclr));
 
-            update_coords(fplog, step, ir, mdatoms, state, fr->bMolPBC, f,
-                          bUpdateDoLR, fr->f_twin, bCalcVir ? &fr->vir_twin_constr : NULL, fcd,
-                          ekind, M, upd, bInitStep, etrtPOSITION, cr, nrnb, constr, &top->idef, fr);
+	    if (!ir->do_nm)
+	    {
+	        printf("flag3\n")
+
+                update_coords(fplog, step, ir, mdatoms, state, fr->bMolPBC, f,
+                              bUpdateDoLR, fr->f_twin, bCalcVir ? &fr->vir_twin_constr : NULL, fcd,
+                              ekind, M, upd, bInitStep, etrtPOSITION, cr, nrnb, constr, &top->idef, fr);
+	    }
+	    else
+	    {
+		/* adress normal mode integrator */
+	        update_coords_nm(ir, mdatoms, state, f, upd, top, cr, fr, ekind, nrnb);
+	    }
+
             wallcycle_stop(wcycle, ewcUPDATE);
 
             update_constraints(fplog, step, &dvdl_constr, ir, mdatoms, state,
