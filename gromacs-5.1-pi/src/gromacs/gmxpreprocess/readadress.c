@@ -188,11 +188,10 @@ void do_adress_index(t_adress *adress, gmx_groups_t *groups, char **gnames, t_gr
     }
     /* end AdResS multiple tf tables input */
 
-
 }
 
 void do_adress_index_pi(t_adress *adress, gmx_groups_t *groups, char **gnames, t_grpopts *opts, t_inputrec *ir)
-  {
+{
 
   int nadress_pi_grp_names, i, j, k, nr; 
   char    *ptr1[MAXPTR];  
@@ -200,58 +199,80 @@ void do_adress_index_pi(t_adress *adress, gmx_groups_t *groups, char **gnames, t
   nr = groups->grps[egcENER].nr;
  
 
-  if (!adress->PI_ExclUserGrp){
-    nadress_pi_grp_names  = str_nelem(adress_pi_grp_names,MAXPTR,ptr1);
+  if (!adress->PI_ExclUserGrp)
+  {
+      nadress_pi_grp_names  = str_nelem(adress_pi_grp_names,MAXPTR,ptr1);
    // printf("nadress_pi_grp_names %d \n", nadress_pi_grp_names);
 
-    if (nadress_pi_grp_names > 0 || !ir->do_nm){
-        snew(pigrps, nadress_pi_grp_names);
-        for (i=0; i <nadress_pi_grp_names; i++){
-            /* search for the group name mathching the tf group name */
-            k = 0;
-            while ((k < nr) &&
-                 strcasecmp(ptr1[i],(char*)(gnames[groups->grps[egcENER].nm_ind[k]])))
-              k++;
-            if (k==nr) gmx_fatal(FARGS,"Adress pi group %s not found\n",ptr1[i]);
-           // printf("ye nr nr kya hai %d \n", nr);
+      if (nadress_pi_grp_names > 0 || !ir->do_nm)
+      {
+          snew(pigrps, nadress_pi_grp_names);
+
+          for (i=0; i <nadress_pi_grp_names; i++)
+	  {
+              /* search for the group name mathching the tf group name */
+              k = 0;
+              while ((k < nr) && strcasecmp(ptr1[i],(char*)(gnames[groups->grps[egcENER].nm_ind[k]])))
+              {
+                  k++;
+              }
+            if (k==nr)
+            { 
+                gmx_fatal(FARGS,"Adress pi group %s not found\n",ptr1[i]);
+	    }
+            // printf("ye nr nr kya hai %d \n", nr);
             // exlusions
             pigrps[i] = k;
          //   printf("ye i hai %d aur yeh pigrps hai %d aur ye k hai %d", i, pigrps[i], k);
-            if (debug) fprintf(debug,"found pi group %s id %d \n",ptr1[i], k);
+            if (debug)
+            {
+	        fprintf(debug,"found pi group %s id %d \n",ptr1[i], k);
+	    }
         }
 
         ir->n_pi_grps=nadress_pi_grp_names;
         printf("adress->n_pi_grps %d \n", ir->n_pi_grps);
-    /* that up exclusion matrix*/
-      for (j = 0; j < nadress_pi_grp_names; j++) {
-            for (k = 0; k < nadress_pi_grp_names; k++) {
-            if (k!=j){
+
+        /* set up exclusion matrix*/
+        for (j = 0; j < nadress_pi_grp_names; j++)
+        {
+            for (k = 0; k < nadress_pi_grp_names; k++)
+	    {
+                if (k!=j)
+		{
                     opts->egp_flags[nr * pigrps[j] + pigrps[k]] |= EGP_EXCL;
                     printf(" opts->egp_flags[nr * pigrps[j] + pigrps[k]] %d \n",  opts->egp_flags[nr * pigrps[j] + pigrps[k]]);
                     printf("AdResS PI excl %s %s \n",
                         (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[j]]]),
                         (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[k]]]));
-                    if (debug) fprintf(debug,"AdResS PI excl %s %s \n",
+                    if (debug)
+		    { 
+		        fprintf(debug,"AdResS PI excl %s %s \n",
                         (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[j]]]),
                         (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[k]]]));
+		    }
                 }
             }
         }
     }
-    else{
+    else
+    {
             
-            if(ir->do_nm){
-                printf("WARNING:Using normal modes: energy group exclusions are not set up");
-              ir->n_pi_grps=ir->scale_coulomb;
+        if(ir->do_nm)
+	{
+            printf("WARNING:Using normal modes: energy group exclusions are not set up\n");
+            ir->n_pi_grps=ir->scale_coulomb;
      //         ir->opts.nrdf[ir->opts.ngtc-1]=(ir->opts.nrdf[0]+3.0)/ir->scale_coulomb-3.0;
               
      //         printf("\nUSING %g DOFs for non-centroid temperature and %g for centroid\n", ir->opts.nrdf[0], ir->opts.nrdf[ir->opts.ngtc-1]);
-            }
-            else{
-                ir->n_pi_grps=1;
-            }
+        }
+        else
+	{
+            ir->n_pi_grps=1;
+        }
     }  
-   }else{
+   }
+  else{
        ir->n_pi_grps=groups->grps[egcUser2].nr;
        printf("Doing exclusions based on user2-grps. All interactions between specified user2-grps will be disabled.\n");
        printf("Found %d user2-grps\n", ir->n_pi_grps);
