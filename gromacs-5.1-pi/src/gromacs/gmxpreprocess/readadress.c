@@ -240,16 +240,17 @@ void do_adress_index_pi(t_adress *adress, gmx_groups_t *groups, char **gnames, t
   	        {
                     if (k!=j)
   		    {
-                        opts->egp_flags[nr * pigrps[j] + pigrps[k]] |= EGP_EXCL;
+                        opts->egp_flags[nr * pigrps[j] + pigrps[k]] |= EGP_EXCL; // what does this mean?
+
                         printf(" opts->egp_flags[nr * pigrps[j] + pigrps[k]] %d \n",  opts->egp_flags[nr * pigrps[j] + pigrps[k]]);
                         printf("AdResS PI excl %s %s \n",
                           (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[j]]]),
                           (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[k]]]));
                         if (debug)
   		        { 
-  		          fprintf(debug,"AdResS PI excl %s %s \n",
-                            (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[j]]]),
-                            (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[k]]]));
+  		            fprintf(debug,"AdResS PI excl %s %s \n",
+                              (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[j]]]),
+                              (char*)(gnames[groups->grps[egcENER].nm_ind[pigrps[k]]]));
   		        }
                     }
                 }
@@ -268,7 +269,7 @@ void do_adress_index_pi(t_adress *adress, gmx_groups_t *groups, char **gnames, t
             }
             else
   	    {
-              ir->n_pi_grps=1;
+                ir->n_pi_grps=1;
             }
         }  
     }
