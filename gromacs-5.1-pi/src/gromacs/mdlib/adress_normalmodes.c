@@ -180,7 +180,7 @@ static void do_update_sd1_nm(gmx_stochd_t *sd, gmx_rng_t gaussrand,
 	dekindl = 0;
         real omg = (BOLTZ*ref_t[0]*2*M_PI)/PLANCK;
        
-	//printf( "do_update_sd1_nm omg %f \n", omg);
+	printf( "do_update_sd1_nm omg %f \n", omg);
 	
 	snew(qv, fr->n_pi_grps);
  	snew(qx, fr->n_pi_grps);
@@ -367,7 +367,7 @@ void update_coords_nm(
         cg0 = 0;
         if (DOMAINDECOMP(cr))
 	{
-           //              printf("hi 1 \n");
+                        printf("hi 1 \n");
 	    cg1 = cr->dd->ncg_home;
 	}
 	else
