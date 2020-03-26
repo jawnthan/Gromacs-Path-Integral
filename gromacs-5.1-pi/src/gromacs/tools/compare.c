@@ -875,7 +875,7 @@ static void cmp_inputrec(FILE *fp, t_inputrec *ir1, t_inputrec *ir2, real ftol, 
     {
         cmp_adress(fp, ir1->adress, ir2->adress, ftol, abstol);
     }
-
+    cmp_real(fp,"inputrec->scale_coulomb", -1,ir1->scale_coulomb,ir2->scale_coulomb,ftol,abstol);
     cmp_int(fp, "inputrec->userint1", -1, ir1->userint1, ir2->userint1);
     cmp_int(fp, "inputrec->userint2", -1, ir1->userint2, ir2->userint2);
     cmp_int(fp, "inputrec->userint3", -1, ir1->userint3, ir2->userint3);

@@ -298,6 +298,7 @@ typedef struct {
     int      n_tf_grps;
     int     *group_explicit;
     int      n_energy_grps;
+    gmx_bool PI_ExclUserGrp; /* if this is set, all interactions between different user2-grps will be exluded*/
 } t_adress;
 
 typedef struct {
@@ -440,6 +441,9 @@ typedef struct {
     t_cosines       ex[DIM];       /* Electric field stuff	(spatial part)		*/
     t_cosines       et[DIM];       /* Electric field stuff	(time part)		*/
     gmx_bool        bQMMM;         /* QM/MM calculation                            */
+    int             n_pi_grps;     /* number of path integral beads */
+    real            scale_coulomb; /* All coulomb interactions scaled by 1/adress_scale coulomb! */
+    gmx_bool        do_nm;         
     int             QMconstraints; /* constraints on QM bonds                      */
     int             QMMMscheme;    /* Scheme: ONIOM or normal                      */
     real            scalefactor;   /* factor for scaling the MM charges in QM calc.*/

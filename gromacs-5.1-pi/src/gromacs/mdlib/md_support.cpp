@@ -310,6 +310,7 @@ void compute_globals(FILE *fplog, gmx_global_stat_t gstat, t_commrec *cr, t_inpu
         }
         else
         {
+	    if(!fr->adress_do_nm)
             calc_ke_part(state, &(ir->opts), mdatoms, ekind, nrnb, bEkinAveVel);
         }
 

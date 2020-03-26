@@ -1432,11 +1432,18 @@ nd %s",
         {
             warning_error(wi, "AdresS simulation supports only cutoff-scheme=group");
         }
-/*        if (!EI_SD(ir->eI))
+        if (!EI_SD(ir->eI))
         {
             warning_error(wi, "AdresS simulation supports only stochastic dynamics");
-        } 
-*/	if (ir->epc != epcNO)
+        }
+        if ((ir->do_nm))
+	{
+            if (!EI_SD(ir->eI))        // if ((ir->eI != eiSD1))
+	    {
+                warning_error(wi,"For the use of normal mode integrator only sd is supported");
+	    }
+        }
+	if (ir->epc != epcNO)
         {
             warning_error(wi, "AdresS simulation does not support pressure coupling");
         }
@@ -2281,11 +2288,15 @@ void get_ir(const char *mdparin, const char *mdparout,
     /* AdResS defined thingies */
     CCTYPE ("AdResS parameters");
     EETYPE("adress",       ir->bAdress, yesno_names);
-    if (ir->bAdress)
-    {
+    RTYPE("adress_scale_coulomb",      ir->scale_coulomb, 1);
+    EETYPE("adress_do_nm",             ir->do_nm, yesno_names);
+    printf("how r u %s \n", ir->bAdress?"true":"false");
+    printf("using nm? %s \n", ir->do_nm ? "true" : "false");
+ //   if (ir->bAdress)
+ //   {
         snew(ir->adress, 1);
         read_adressparams(&ninp, &inp, ir->adress, wi);
-    }
+ //   }
 
     /* User defined thingies */
     CCTYPE ("User defined thingies");
@@ -3781,6 +3792,8 @@ void do_index(const char* mdparin, const char *ndx,
     {
         do_adress_index(ir->adress, groups, gnames, &(ir->opts), wi);
     }
+
+    do_adress_index_pi(ir->adress, groups, gnames, &(ir->opts), ir);
 
     for (i = 0; (i < grps->nr); i++)
     {

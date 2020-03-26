@@ -1115,6 +1115,9 @@ void pr_inputrec(FILE *fp, int indent, const char *title, t_inputrec *ir,
             PS("adress-site", EADRESSSITETYPE(ir->adress->site));
             pr_rvec(fp, indent, "adress-reference-coords", ir->adress->refs, DIM, TRUE);
             PS("adress-do-hybridpairs", EBOOL(ir->adress->do_hybridpairs));
+	    PR("adress_scale_coulomb", ir->scale_coulomb);
+            PS("adress_do_nm",EBOOL(ir->do_nm));
+	    PS("adress_PI_ExclUserGrp", EBOOL(ir->adress->PI_ExclUserGrp));
         }
 
         /* USER-DEFINED THINGIES */

@@ -71,12 +71,14 @@ typedef struct {
     /* for QMMM, atomnumber contains atomic number of the atoms */
     gmx_bool              *bQM;
     /* The range of home atoms */
+    int                    start;
     int                    homenr;
     /* The lambda value used to create the contents of the struct */
     real                   lambda;
     /* The AdResS weighting function */
     real                  *wf;
     unsigned short        *tf_table_index; /* The tf table that will be applied, if thermodyn, force enabled*/
+    rvec *                 ring_force;
 } t_mdatoms;
 
 #ifdef __cplusplus
